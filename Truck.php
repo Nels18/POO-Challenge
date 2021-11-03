@@ -24,7 +24,7 @@ class Truck extends Vehicle
         return $this->energy;
     }
 
-    public function setEnergy(string $energy): Car
+    public function setEnergy(string $energy): void
     {
         $this->energy = $energy;
     }
