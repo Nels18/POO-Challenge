@@ -65,7 +65,7 @@ $pedestrianWay = new PedestrianWay();
 var_dump($car->getParkBrake());
 try {
     $car->start();
-} catch (Exception $e) {
+} catch (LogicException $e) {
     $car->setParkBrake();
 } finally {
     echo "Ma voiture roule comme un donut";
