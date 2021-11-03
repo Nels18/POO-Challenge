@@ -62,12 +62,24 @@ $pedestrianWay = new PedestrianWay();
 
 
 // Challenge 4
-var_dump($car->getParkBrake());
-try {
-    $car->start();
-} catch (LogicException $e) {
-    $car->setParkBrake();
-} finally {
-    echo "Ma voiture roule comme un donut";
-}
-var_dump($car->getParkBrake());
+// var_dump($car->getParkBrake());
+// try {
+//     $car->start();
+// } catch (LogicException $e) {
+//     $car->setParkBrake();
+// } finally {
+//     echo "Ma voiture roule comme un donut";
+// }
+// var_dump($car->getParkBrake());
+
+
+// Challenge 5
+echo "car On : " . $car->switchOn() . ".\n";
+echo "car Off : " . $car->switchOff() . ".\n";
+
+$bike->forward();
+echo "bike On : " . $bike->switchOn() . ".\n";
+echo "bike Off : " . $bike->switchOff() . ".\n";
+
+echo "skate On : " . $skate->switchOn() . ".\n";
+echo "skate Off : " . $skate->switchOff() . ".\n";
