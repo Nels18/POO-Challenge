@@ -37,24 +37,37 @@ $pedestrianWay = new PedestrianWay();
 // echo $truck->forward();
 // echo $truck->brake();
 
+
 // Challenge 3
-$motorWay->addVehicle($truck);
-$motorWay->addVehicle($car);
-$motorWay->addVehicle($skate);
-$motorWay->addVehicle($bike);
-echo "motorWay : \n";
-var_dump($motorWay);
+// $motorWay->addVehicle($truck);
+// $motorWay->addVehicle($car);
+// $motorWay->addVehicle($skate);
+// $motorWay->addVehicle($bike);
+// echo "motorWay : \n";
+// var_dump($motorWay);
 
-$residentialWay->addVehicle($truck);
-$residentialWay->addVehicle($car);
-$residentialWay->addVehicle($skate);
-$residentialWay->addVehicle($bike);
-echo "residentialWay : \n";
-var_dump($residentialWay);
+// $residentialWay->addVehicle($truck);
+// $residentialWay->addVehicle($car);
+// $residentialWay->addVehicle($skate);
+// $residentialWay->addVehicle($bike);
+// echo "residentialWay : \n";
+// var_dump($residentialWay);
 
-$pedestrianWay->addVehicle($truck);
-$pedestrianWay->addVehicle($car);
-$pedestrianWay->addVehicle($skate);
-$pedestrianWay->addVehicle($bike);
-echo "pedestrianWay : \n";
-var_dump($pedestrianWay);
+// $pedestrianWay->addVehicle($truck);
+// $pedestrianWay->addVehicle($car);
+// $pedestrianWay->addVehicle($skate);
+// $pedestrianWay->addVehicle($bike);
+// echo "pedestrianWay : \n";
+// var_dump($pedestrianWay);
+
+
+// Challenge 4
+var_dump($car->getParkBrake());
+try {
+    $car->start();
+} catch (LogicException $e) {
+    $car->setParkBrake();
+} finally {
+    echo "Ma voiture roule comme un donut";
+}
+var_dump($car->getParkBrake());
