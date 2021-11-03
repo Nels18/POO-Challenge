@@ -62,7 +62,7 @@ class Car extends Vehicle
     public function start(): string
     {
         if ($this->hasParkBrake) {
-            throw new Exception("Warning: the parking brake is activated !");
+            throw new LogicException("Warning: the parking brake is activated !");
         }
         $this->currentSpeed = 0;
 
