@@ -20,6 +20,7 @@ class Vehicle
     {
         $this->currentSpeed = 15;
         
+
         return "Go !";
     }
 
