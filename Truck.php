@@ -27,7 +27,6 @@ class Truck extends Vehicle
     public function setEnergy(string $energy): Car
     {
         $this->energy = $energy;
-
     }
 
     public function getEnergyLevel(): int
@@ -72,6 +71,7 @@ class Truck extends Vehicle
         } else {
             $sentence .= "Full.";
         }
+        
         return $sentence;
     }
 }
