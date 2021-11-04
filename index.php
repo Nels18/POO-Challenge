@@ -7,6 +7,7 @@ require_once 'Skateboard.php';
 require_once 'MotorWay.php';
 require_once 'ResidentialWay.php';
 require_once 'PedestrianWay.php';
+require_once 'Speedometer.php';
 
 
 $car = new Car('red', 4, 'electric');
@@ -74,12 +75,17 @@ $pedestrianWay = new PedestrianWay();
 
 
 // Challenge 5
-echo "car On : " . $car->switchOn() . ".\n";
-echo "car Off : " . $car->switchOff() . ".\n";
+// echo "car On : " . $car->switchOn() . ".\n";
+// echo "car Off : " . $car->switchOff() . ".\n";
 
-$bike->forward();
-echo "bike On : " . $bike->switchOn() . ".\n";
-echo "bike Off : " . $bike->switchOff() . ".\n";
+// $bike->forward();
+// echo "bike On : " . $bike->switchOn() . ".\n";
+// echo "bike Off : " . $bike->switchOff() . ".\n";
 
-echo "skate On : " . $skate->switchOn() . ".\n";
-echo "skate Off : " . $skate->switchOff() . ".\n";
+// echo "skate On : " . $skate->switchOn() . ".\n";
+// echo "skate Off : " . $skate->switchOff() . ".\n";
+
+
+// Challenge 6
+echo "10km => " . Speedometer::convertKmToMiles(10) . "miles\n";
+echo "12,430miles => " . Speedometer::convertMilesToKm(12.430) . "km";
